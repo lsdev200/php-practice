@@ -41,15 +41,16 @@ function formatBytes($bytes, $precision = 2) {
     // Return the formatted size with the appropriate unit
     // We use the round function to round the size to the specified precision
     return round($size, $precision) . ' ' . $units[$index];
+
 }
 
 // Test cases
-echo formatBytes(0) . "\n";                      // Output: 0 B
-echo formatBytes(1024) . "\n";                   // Output: 1 KB
-echo formatBytes(1048576) . "\n";                // Output: 1 MB
-echo formatBytes(1073741824) . "\n";             // Output: 1 GB
-echo formatBytes(1099511627776) . "\n";          // Output: 1 TB
-echo formatBytes(1125899906842624) . "\n";       // Output: 1 PB
-echo formatBytes(1152921504606846976) . "\n";    // Output: 1 EB
-echo formatBytes(1180591620717411303) . "\n";    // Output: 1 ZB
-echo formatBytes(999925819614629999) . "\n";     // Output: 1 YB
+echo formatBytes(0) . "\n";   
+echo formatBytes(1024) . "\n"; 
+echo formatBytes(1048576) . "\n";         
+echo formatBytes(1073741824) . "\n";      
+echo formatBytes(1099511627776) . "\n";   
+echo formatBytes(1125899906842624) . "\n";
+echo formatBytes(1152921504606846976) . "\n";
+echo formatBytes(1180591620717411303) . "\n";
+echo formatBytes(999925819614629999) . "\n";

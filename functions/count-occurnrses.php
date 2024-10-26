@@ -13,10 +13,8 @@ function countOccurrences($array) {
     return $counts;
 }
 
-$data = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
-
+$data = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple', 'orange'];
 $result = countOccurrences($data);
-
 print_r($result);
 
 
