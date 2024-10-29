@@ -13,5 +13,4 @@ function arrayToXmlString($array, $rootElement = null, $xml = null) {
     }
     return $xml->asXML();
 }
-
 echo arrayToXmlString(array("name"=>"John", "age"=>30, "address"=>array("street"=>"123 Main", "city"=>"Anytown", "state"=>"IL")));

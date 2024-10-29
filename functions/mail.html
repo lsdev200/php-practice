@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sender</title>
+</head>
+<body>
+    <h1>Send an Email</h1>
+    <form action="mailfunction.php" method="post">
+        <label for="to">To:</label>
+        <input type="email" name="to" id="to" required>
+        <br><br>
+        
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id="subject" required>
+        <br><br>
+        
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="6" required></textarea>
+        <br><br>
+        
+        <input type="submit" value="Send Email">
+    </form>
+</body>
+</html>
